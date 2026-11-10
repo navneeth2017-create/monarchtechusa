@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Process — Monarch</title>
+  <meta name="description" content="How Monarch maps, builds, and launches a custom growth system in a focused first phase.">
+  <meta name="theme-color" content="#14110e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body id="top" data-page="process">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+
+  <main id="main" class="page-enter">
+    <section class="page-hero">
+      <div class="shell page-hero-grid">
+        <div>
+          <p class="eyebrow">Process</p>
+          <h1>From messy to running. <em>Weeks, not quarters.</em></h1>
+          <p class="lede">A focused first phase: map the market, build the system around the real work, and launch with the team that will use it.</p>
+        </div>
+        <aside class="page-hero-side">
+          <span class="mono">The shape of it</span>
+          <p>We do not disappear into a discovery phase. We build in the open, with your team in the room and a working system at the end of each phase.</p>
+          <div class="page-index">
+            <a href="#map"><span>Map</span><span>01</span></a>
+            <a href="#build"><span>Build</span><span>02</span></a>
+            <a href="#launch"><span>Launch</span><span>03</span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" data-process-demo>
+      <div class="shell">
+        <div class="process-tabs" role="tablist" aria-label="Project phases">
+          <button class="process-tab is-active" type="button" role="tab" id="map" aria-selected="true" aria-controls="phase-map" data-phase-tab="map">
+            <span class="process-tab-num">01</span>
+            <span class="process-tab-name">Map</span>
+            <span class="process-tab-sub">Market, offer, stages</span>
+            <span class="process-tab-time">Week 1</span>
+          </button>
+          <button class="process-tab" type="button" role="tab" id="build" aria-selected="false" aria-controls="phase-build" tabindex="-1" data-phase-tab="build">
+            <span class="process-tab-num">02</span>
+            <span class="process-tab-name">Build</span>
+            <span class="process-tab-sub">CRM, sequences, routing</span>
+            <span class="process-tab-time">Weeks 2–3</span>
+          </button>
+          <button class="process-tab" type="button" role="tab" id="launch" aria-selected="false" aria-controls="phase-launch" tabindex="-1" data-phase-tab="launch">
+            <span class="process-tab-num">03</span>
+            <span class="process-tab-name">Launch</span>
+            <span class="process-tab-sub">Go live, train, tune</span>
+            <span class="process-tab-time">Week 4</span>
+          </button>
+        </div>
+
+        <div class="process-panels">
+          <div class="process-panel is-active" id="phase-map" role="tabpanel" aria-labelledby="map" tabindex="0" data-phase-panel="map">
+            <div class="process-panel-copy">
+              <p class="mono">Phase 01 · Map</p>
+              <h2>Pin down the market.</h2>
+              <p>We start with the market and the offer: the service area, the categories that fit, the questions your team asks, and the stages a real opportunity moves through. This is where we decide what the system should do — and what it should ignore.</p>
+              <ul class="feature-list">
+                <li>Service area and ideal-fit categories</li>
+                <li>Stages, handoffs, and the first scripts</li>
+                <li>Data sources, access, and existing tools</li>
+              </ul>
+            </div>
+            <aside class="phase-meta">
+              <p class="mono">Week 1</p>
+              <b>Inputs</b>
+              <ul>
+                <li>Service area</li>
+                <li>Ideal fit and exclusions</li>
+                <li>Current stages and scripts</li>
+                <li>Data and access</li>
+              </ul>
+              <div class="phase-output">
+                <span class="mono">Output</span>
+                <p>A one-page market map and the first sequence your team will run.</p>
+              </div>
+            </aside>
+          </div>
+
+          <div class="process-panel" id="phase-build" role="tabpanel" aria-labelledby="build" tabindex="0" data-phase-panel="build" hidden>
+            <div class="process-panel-copy">
+              <p class="mono">Phase 02 · Build</p>
+              <h2>Build around the real work.</h2>
+              <p>We configure the core CRM, lead finder, sequences, and pipeline, then extend the parts that are uniquely yours. Integrations, routing, reporting, permissions — built against the workflow we mapped, not a generic template.</p>
+              <ul class="feature-list">
+                <li>CRM, data model, and lead engine</li>
+                <li>Voice, SMS, and email sequences</li>
+                <li>Integrations, views, and team permissions</li>
+              </ul>
+            </div>
+            <aside class="phase-meta">
+              <p class="mono">Weeks 2–3</p>
+              <b>Inputs</b>
+              <ul>
+                <li>Mapped workflow</li>
+                <li>Approved scripts and offers</li>
+                <li>Tool access and sample data</li>
+                <li>A decision-maker on call</li>
+              </ul>
+              <div class="phase-output">
+                <span class="mono">Output</span>
+                <p>A working system in a staging workspace, ready for a team walkthrough.</p>
+              </div>
+            </aside>
+          </div>
+
+          <div class="process-panel" id="phase-launch" role="tabpanel" aria-labelledby="launch" tabindex="0" data-phase-panel="launch" hidden>
+            <div class="process-panel-copy">
+              <p class="mono">Phase 03 · Launch</p>
+              <h2>Launch with the people who use it.</h2>
+              <p>We go live with the team, train the people who will use it every day, and watch what happens in the first real week. Then we tune the scripts, stages, and routing from what the data says — not what the demo suggested.</p>
+              <ul class="feature-list">
+                <li>Team training and a clear operating rhythm</li>
+                <li>First-week monitoring and fixes</li>
+                <li>A next-step plan for the next iteration</li>
+              </ul>
+            </div>
+            <aside class="phase-meta">
+              <p class="mono">Week 4</p>
+              <b>Inputs</b>
+              <ul>
+                <li>Staging walkthrough</li>
+                <li>Team roles and permissions</li>
+                <li>Launch date and first campaign</li>
+                <li>Support channel</li>
+              </ul>
+              <div class="phase-output">
+                <span class="mono">Output</span>
+                <p>A live workspace, a trained team, and a short list of what to improve next.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">What it takes</p>
+            <h2>A working system, <em>not a handoff.</em></h2>
+          </div>
+          <p class="lede">You do not need a product team. You need someone who knows the market, someone who knows the work, and a way to make decisions quickly.</p>
+        </div>
+        <div class="deliverable-grid">
+          <article class="deliverable">
+            <p class="mono">From you</p>
+            <h3>A decision-maker in the room.</h3>
+            <p>Someone who can say yes to the market, the offer, the stages, and the scripts. We move fast when the person who owns the work is close to the build.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">From you</p>
+            <h3>The real version of the workflow.</h3>
+            <p>Not the clean process from a training deck. The workarounds, the exceptions, and the “we always do it this way” parts are what make the system useful.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">From us</p>
+            <h3>A working system and a clear launch.</h3>
+            <p>The configured CRM, lead engine, sequences, integrations, training, and a first-phase plan for what to improve after launch.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">Ongoing</p>
+            <h3>A partner for the next iteration.</h3>
+            <p>Hosting, monitoring, support, campaign optimization, and a monthly roadmap so the system keeps improving after the first launch.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="process-cta">
+      <div class="shell cta-grid">
+        <div>
+          <p class="eyebrow">Start with a map</p>
+          <h2 id="process-cta">The first conversation <em>is the first phase.</em></h2>
+          <p class="lede">Bring your service area, your offer, and one workflow that frustrates you. We will leave the call with a clearer picture of what the first build should be.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="contact.html">Request a working session <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <span class="mono">30 minutes · No deck required</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>

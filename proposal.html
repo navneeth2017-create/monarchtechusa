@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monarch — Ozone growth system proposal</title>
+  <meta name="description" content="A custom CRM and growth system for an ozone services business. Proposal and investment.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="proposal.css">
+  <script>
+    (() => {
+      const printMode = new URLSearchParams(location.search).get("print");
+      if (printMode) document.documentElement.dataset.print = printMode;
+    })();
+  </script>
+</head>
+<body class="view-full">
+
+  <svg class="p-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="p-butterfly">
+        <g transform="rotate(-6 32 32)">
+          <path d="M31 21.5 C29 16.5 26.5 13.5 23.5 12.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M33 21.5 C35 16.5 37.5 13.5 40.5 12.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M30.5 30 C26 13 9 4 5 11 C1 18 11 30 29 34.5 Z" fill="#E8873B"/>
+          <path d="M29.5 35 C16 34 5 43 8.5 51 C12 58.5 26 52 30.5 38 Z" fill="#B96529"/>
+          <path d="M33.5 30 C38 13 55 4 59 11 C63 18 53 30 35 34.5 Z" fill="#E8873B"/>
+          <path d="M34.5 35 C48 34 59 43 55.5 51 C52 58.5 38 52 33.5 38 Z" fill="#B96529"/>
+          <ellipse cx="32" cy="36.5" rx="2.5" ry="10.5" fill="currentColor"/>
+          <circle cx="32" cy="24" r="2.8" fill="currentColor"/>
+        </g>
+      </g>
+    </defs>
+  </svg>
+
+  <div class="toolbar" role="region" aria-label="Proposal controls">
+    <div class="toolbar-brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#p-butterfly"/></svg>
+      <span>Monarch <em>proposal</em></span>
+    </div>
+    <div class="toolbar-controls">
+      <div class="seg" role="group" aria-label="Preview pages">
+        <button type="button" data-view="pitch">Page 1</button>
+        <button type="button" data-view="full" class="is-active">Both pages</button>
+        <button type="button" data-view="investment">Page 2</button>
+      </div>
+      <button class="tool-btn" type="button" data-print="pitch">Print page 1</button>
+      <button class="tool-btn tool-primary" type="button" data-print="full">Print both pages</button>
+    </div>
+    <div class="toolbar-downloads">
+      <a href="monarch-ozone-pitch.pdf" download>Pitch PDF</a>
+      <a href="monarch-ozone-proposal.pdf" download>Full PDF</a>
+    </div>
+  </div>
+  <p class="toolbar-hint">Use “Print page 1” to share the pitch without the pricing page.</p>
+
+  <main class="proposal">
+
+    <!-- ================= PAGE 1 — PITCH ================= -->
+    <article class="page page-1" id="pitch" aria-label="Ozone growth system pitch">
+      <header class="p1-hero">
+        <div class="p-wing" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#p-butterfly"/></svg></div>
+        <div class="p1-top">
+          <div class="p-brand">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#p-butterfly"/></svg>
+            <span>Monarch</span>
+          </div>
+          <div class="p-meta">
+            Custom growth system<br>
+            Ozone services · 2026
+          </div>
+        </div>
+
+        <p class="p-eyebrow">A proposal for your ozone business</p>
+        <h1>Your next install is already <em>inside your service radius.</em></h1>
+        <p class="p-lede">A custom CRM and growth system that finds local commercial prospects, starts the conversation by call, text, and email, and keeps every follow-up moving until it's a booked assessment.</p>
+        <div class="p-hero-tags">
+          <span>Local lead finder</span>
+          <span>AI calls + SMS + email</span>
+          <span>One pipeline</span>
+        </div>
+      </header>
+
+      <div class="p1-body">
+        <div class="p1-left">
+          <p class="p-section-label">What we'd build</p>
+          <ol class="p-features">
+            <li class="p-feature">
+              <span class="p-feature-num">01</span>
+              <div>
+                <h3>Find the market</h3>
+                <p>Set a radius around your service area and pull in the commercial properties that fit your offer. Dedupe against existing customers before the first call.</p>
+              </div>
+            </li>
+            <li class="p-feature">
+              <span class="p-feature-num">02</span>
+              <div>
+                <h3>Start the conversation</h3>
+                <p>AI-assisted calls, two-way SMS, and email run as one sequence — with live handoff the moment someone is interested.</p>
+              </div>
+            </li>
+            <li class="p-feature">
+              <span class="p-feature-num">03</span>
+              <div>
+                <h3>Work the pipeline</h3>
+                <p>Every touch lands on one record. Stages, tasks, and reminders update from real activity — not memory or a spreadsheet.</p>
+              </div>
+            </li>
+            <li class="p-feature">
+              <span class="p-feature-num">04</span>
+              <div>
+                <h3>Close the loop</h3>
+                <p>Capture ozone-specific intake, quote, schedule, and trigger service and referral follow-ups automatically.</p>
+              </div>
+            </li>
+          </ol>
+          <div class="p-callout">
+            <span>Built for ozone</span>
+            <p>Square footage, odor source, occupancy, and install access — captured on the first conversation, not scribbled on a quote.</p>
+          </div>
+          <div class="p1-outcomes">
+            <p class="p-section-label">The shift</p>
+            <p class="p1-outcomes-line">From lists, dialers, texts, and a spreadsheet to <em>one system that knows what happened and what happens next.</em></p>
+            <div class="p1-outcomes-tags"><span>One record</span><i>·</i><span>One next step</span><i>·</i><span>One version of the truth</span></div>
+          </div>
+        </div>
+
+        <div class="p1-right">
+          <div class="p-app-wrap">
+            <div class="p-app">
+              <div class="p-app-chrome">
+                <span class="p-dot"></span><span class="p-dot"></span><span class="p-dot"></span>
+                <span class="p-app-url">app.monarch / lead finder</span>
+                <span class="p-app-live"><i></i> Live</span>
+              </div>
+              <div class="p-app-core">
+                <div class="p-app-head">
+                  <div>
+                    <p class="p-app-eyebrow">Growth / Lead finder</p>
+                    <h2>Your market, mapped.</h2>
+                  </div>
+                  <span class="p-app-pill">25 mi radius</span>
+                </div>
+                <div class="p-app-map">
+                  <svg viewBox="0 0 480 280" aria-hidden="true">
+                    <rect width="480" height="280" fill="#151b18"/>
+                    <path d="M0 38h480M0 82h480M0 130h480M0 184h480M0 234h480M38 0v280M95 0v280M160 0v280M230 0v280M300 0v280M372 0v280M438 0v280" stroke="#28332d" stroke-width="1"/>
+                    <path d="M-20 190 C70 172 105 202 168 181 S280 130 338 150 S420 202 510 170" fill="none" stroke="#2d3f37" stroke-width="22"/>
+                    <path d="M-20 190 C70 172 105 202 168 181 S280 130 338 150 S420 202 510 170" fill="none" stroke="#3b5146" stroke-width="1.5"/>
+                    <path d="M64 -20 C92 58 120 80 106 134 S86 225 124 300" fill="none" stroke="#24302a" stroke-width="12"/>
+                    <path d="M340 -20 C318 52 342 94 380 122 S426 194 410 300" fill="none" stroke="#24302a" stroke-width="12"/>
+                    <circle cx="240" cy="140" r="100" fill="rgba(232,135,59,.055)" stroke="rgba(232,135,59,.32)" stroke-width="1" stroke-dasharray="4 6"/>
+                    <circle cx="240" cy="140" r="60" fill="rgba(232,135,59,.05)" stroke="rgba(232,135,59,.2)" stroke-width="1" stroke-dasharray="3 5"/>
+                    <circle cx="240" cy="140" r="4" fill="#E8873B"/>
+                    <circle cx="240" cy="140" r="9" fill="none" stroke="rgba(232,135,59,.45)"/>
+                    <path d="M98 92l5 5M336 82l5 5M362 196l5 5M146 210l5 5M196 78l5 5M292 216l5 5" stroke="#E8873B" stroke-width="1.2"/>
+                  </svg>
+                  <span class="p-map-pin pin-1">1</span>
+                  <span class="p-map-pin pin-2">2</span>
+                  <span class="p-map-pin pin-3">3</span>
+                  <span class="p-map-pin pin-4">4</span>
+                  <span class="p-map-chip"><b>148</b> prospects in radius</span>
+                  <span class="p-map-legend">Restaurants 42 · Gyms 28 · Hotels 19 · Property mgmt 31</span>
+                </div>
+                <div class="p-leads">
+                  <div class="p-leads-head"><span>Best-fit prospects</span><span>Sorted by fit</span></div>
+                  <div class="p-lead-row"><span class="p-lead-avatar">RH</span><div><b>Riverside Hotel</b><span>Hotel · 3.2 mi · 84 rooms</span></div><em>Call</em></div>
+                  <div class="p-lead-row"><span class="p-lead-avatar">NG</span><div><b>Northside Grill</b><span>Restaurant · 4.1 mi · 2 locations</span></div><em>Call</em></div>
+                  <div class="p-lead-row"><span class="p-lead-avatar">IF</span><div><b>Ironwood Fitness</b><span>Gym · 5.8 mi · 18k sq ft</span></div><em>Call</em></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-app-float">
+              <span class="p-check">✓</span>
+              <div><b>Assessment booked</b><span>Riverside Hotel · Thu 10:30</span></div>
+            </div>
+          </div>
+          <div class="p-app-caption"><span>Lead finder + outreach</span><span>148 prospects · 25 mi</span></div>
+        </div>
+      </div>
+
+      <div class="p1-bottom">
+        <section class="p-days" aria-label="The first 30 days">
+          <div class="p-days-head">
+            <p class="p-section-label">The first 30 days</p>
+            <span class="p-small">One offer. One service area. Real usage.</span>
+          </div>
+          <div class="p-days-grid">
+            <div class="p-day"><span>Week 1</span><b>Map</b><p>Service area, offer, stages, scripts.</p></div>
+            <div class="p-day"><span>Weeks 2–3</span><b>Build</b><p>CRM, lead engine, sequences, integrations.</p></div>
+            <div class="p-day"><span>Week 4</span><b>Launch</b><p>Go live, train the team, tune what the data says.</p></div>
+          </div>
+        </section>
+
+        <div class="p-cta">
+          <div>
+            <span class="p-section-label">Next step</span>
+            <p>30-minute working session. We'll map your market and the first build.</p>
+          </div>
+          <div class="p-cta-right">
+            <a href="mailto:team@monarchtechusa.com">team@monarchtechusa.com</a><br>
+            monarchtechusa.com
+          </div>
+        </div>
+      </div>
+
+      <footer class="p-footer">
+        <span>Monarch Technologies · Tempe, Arizona</span>
+        <span>Confidential · Prepared for your ozone business</span>
+      </footer>
+    </article>
+
+    <!-- ================= PAGE 2 — INVESTMENT ================= -->
+    <article class="page page-2" id="investment" aria-label="Investment and scope">
+      <header class="p2-header">
+        <div class="p-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#p-butterfly"/></svg>
+          <span>Monarch</span>
+        </div>
+        <div class="p2-header-meta">
+          Investment &amp; scope<br>
+          Ozone growth system
+        </div>
+      </header>
+
+      <div class="p2-body">
+        <div class="p2-intro">
+          <h1>A custom system, <em>built and run by Monarch.</em></h1>
+          <p>One build to design, integrate, and launch the system. One monthly partnership to keep it hosted, supported, and improving.</p>
+        </div>
+
+        <section class="p2-pricing" aria-label="Investment">
+          <div class="price-card">
+            <span class="p-section-label">One-time build</span>
+            <div class="price-amount">$30,000</div>
+            <p class="price-sub">Discovery, custom CRM, lead engine, AI calling setup, sequences, integrations, training, and launch.</p>
+            <div class="price-note">50% to begin · 25% at build review · 25% at launch</div>
+          </div>
+          <div class="price-card">
+            <span class="p-section-label">Monthly partnership</span>
+            <div class="price-amount">$2,500<span> / month</span></div>
+            <p class="price-sub">Hosting, monitoring, support, provider management, campaign optimization, and the next iteration.</p>
+            <div class="price-note">Begins at launch · 90-day initial term · month to month after</div>
+          </div>
+        </section>
+
+        <div class="p2-grid">
+          <section class="p2-block">
+            <h2>What the build includes</h2>
+            <ul class="p2-list">
+              <li>Discovery and market map</li>
+              <li>Custom CRM and data model</li>
+              <li>Radius lead finder + filters</li>
+              <li>Duplicate and customer protection</li>
+              <li>AI voice scripts and setup</li>
+              <li>SMS and email sequences</li>
+              <li>Pipeline and task automation</li>
+              <li>Core integrations and handoffs</li>
+              <li>Consent, opt-out, and logging</li>
+              <li>Dashboard + field view</li>
+              <li>Team training and documentation</li>
+              <li>30-day launch hypercare</li>
+            </ul>
+          </section>
+          <section class="p2-block">
+            <h2>What the monthly covers</h2>
+            <ul class="p2-list">
+              <li>Hosting and infrastructure</li>
+              <li>Monitoring and uptime</li>
+              <li>Support for your team</li>
+              <li>AI and provider management</li>
+              <li>Sequence and script tuning</li>
+              <li>Campaign optimization</li>
+              <li>Deliverability and consent review</li>
+              <li>Monthly reporting and roadmap</li>
+              <li>Small improvements each month</li>
+              <li>Quarterly strategy session</li>
+              <li>One workspace, up to 10 users</li>
+              <li>Up to three active sequences</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="p2-why" aria-label="Why this investment">
+          <div>
+            <span class="p-section-label">Why this price</span>
+            <h3>This isn't a seat license. It's an operating system.</h3>
+          </div>
+          <p>The build replaces months of product and engineering work around one specific business. The retainer replaces a stack of disconnected tools — and a part-time operator trying to keep them honest. At your average install value, one incremental install a month can cover the retainer. A handful covers the build.</p>
+        </section>
+
+        <div class="p2-replaces">
+          <span class="p-section-label">What it replaces</span>
+          <div><span>Lead lists</span><i>·</i><span>Dialer</span><i>·</i><span>SMS platform</span><i>·</i><span>CRM + admin</span><i>·</i><span>Manual follow-up</span></div>
+        </div>
+
+        <section class="p2-timeline" aria-label="Timeline">
+          <div class="p2-timeline-head">
+            <span class="p-section-label">Timeline</span>
+            <span class="p-small">A focused first phase, not a six-month committee.</span>
+          </div>
+          <div class="p2-timeline-grid">
+            <div class="p2-step"><span>Week 0</span><b>Kickoff</b><p>Access, goals, offer, service area.</p></div>
+            <div class="p2-step"><span>Week 1</span><b>Map</b><p>Market, stages, scripts, data.</p></div>
+            <div class="p2-step"><span>Weeks 2–3</span><b>Build</b><p>CRM, lead engine, sequences.</p></div>
+            <div class="p2-step"><span>Week 4</span><b>Launch</b><p>Go live, train, tune.</p></div>
+            <div class="p2-step"><span>Month 2+</span><b>Optimize</b><p>Report, refine, expand.</p></div>
+          </div>
+        </section>
+
+        <div class="p2-notes">
+          <div>
+            <h4>Phase 1 scope</h4>
+            <p>One workspace, one service area, up to 10 users, and up to three active sequences. Additional markets, brands, or custom integrations are quoted separately.</p>
+          </div>
+          <div>
+            <h4>Usage &amp; terms</h4>
+            <p>Call, SMS, email, and AI usage is monitored monthly against a fair-use allowance. Paid ad spend, print/video production, hardware, and third-party subscriptions outside the core stack are not included.</p>
+          </div>
+        </div>
+
+        <div class="p2-accept">
+          <div class="sig"><span>Approved by</span><span class="line"></span></div>
+          <div class="sig"><span>Date</span><span class="line short"></span></div>
+        </div>
+      </div>
+
+      <footer class="p-footer">
+        <span>Monarch Technologies · team@monarchtechusa.com</span>
+        <span>Investment &amp; scope · Page 2</span>
+      </footer>
+    </article>
+
+  </main>
+
+  <script>
+    const body = document.body;
+    const viewButtons = [...document.querySelectorAll('[data-view]')];
+    const printButtons = [...document.querySelectorAll('[data-print]')];
+
+    function setView(view) {
+      body.classList.remove('view-pitch', 'view-full', 'view-investment');
+      body.classList.add('view-' + view);
+      viewButtons.forEach(btn => btn.classList.toggle('is-active', btn.dataset.view === view));
+    }
+
+    viewButtons.forEach(btn => btn.addEventListener('click', () => setView(btn.dataset.view)));
+
+    function clearPrintMode() {
+      body.classList.remove('print-pitch', 'print-investment');
+    }
+
+    function printPage(mode) {
+      clearPrintMode();
+      if (mode === 'pitch') body.classList.add('print-pitch');
+      if (mode === 'investment') body.classList.add('print-investment');
+      window.print();
+    }
+
+    printButtons.forEach(btn => btn.addEventListener('click', () => printPage(btn.dataset.print)));
+    window.addEventListener('afterprint', clearPrintMode);
+
+    const params = new URLSearchParams(location.search);
+    if (params.get('print') === 'pitch') { body.classList.add('print-pitch'); setView('pitch'); }
+    if (params.get('print') === 'investment') { body.classList.add('print-investment'); setView('investment'); }
+  </script>
+</body>
+</html>

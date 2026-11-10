@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platform — Monarch</title>
+  <meta name="description" content="Monarch's core platform: radius-based lead discovery, consent-aware AI voice, SMS and email, and one pipeline for the whole relationship.">
+  <meta name="theme-color" content="#14110e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body id="top" data-page="platform">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+
+  <main id="main" class="page-enter">
+    <section class="page-hero">
+      <div class="shell page-hero-grid">
+        <div>
+          <p class="eyebrow">The platform</p>
+          <h1>One system. <em>Three jobs.</em></h1>
+          <p class="lede">Find the right businesses. Start the right conversation. Keep the whole relationship in one place — so the next step is always visible.</p>
+        </div>
+        <aside class="page-hero-side">
+          <span class="mono">On this page</span>
+          <p>One core system, configured around your market and your team. No handoffs between tools.</p>
+          <div class="page-index">
+            <a href="#find"><span>Find the market</span><span>01</span></a>
+            <a href="#reach"><span>Start the conversation</span><span>02</span></a>
+            <a href="#close"><span>Close the loop</span><span>03</span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="band" id="find">
+      <div class="shell band-grid">
+        <div class="band-copy">
+          <p class="mono">01 · Find</p>
+          <h2>Draw your market.</h2>
+          <p>Pick a point, set a radius, and pull in the commercial properties that match your offer. Filter by category, remove duplicates before the first touch, and send the best-fit prospects into a sequence without leaving the map.</p>
+          <ul class="feature-list">
+            <li>Radius and category search</li>
+            <li>Duplicate and existing-customer protection</li>
+            <li>One click from prospect to sequence</li>
+            <li>Fit rules that reflect your actual service area</li>
+          </ul>
+        </div>
+        <div class="band-visual" data-finder>
+          <div class="visual-label"><span>Lead finder · Sample data</span><span data-finder-label>25 mile radius</span></div>
+          <div class="app-frame">
+            <div class="app-chrome">
+              <span class="app-dot"></span><span class="app-dot"></span><span class="app-dot"></span>
+              <span class="app-url">app.monarch / lead finder</span>
+              <span class="app-status">Live</span>
+            </div>
+            <div class="app-shell">
+              <aside class="app-rail" aria-label="Product navigation preview">
+                <span class="rail-brand"><img src="assets/monarch-mark.svg" alt=""></span>
+                <span class="rail-item is-active" title="Lead finder"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <span class="rail-item" title="Leads"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-users"/></svg></span>
+                <span class="rail-item" title="Sequences"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-spark"/></svg></span>
+                <span class="rail-item" title="Pipeline"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-chart"/></svg></span>
+                <span class="rail-item" title="Routes"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-route"/></svg></span>
+              </aside>
+              <div class="app-main">
+                <div class="app-top">
+                  <div>
+                    <p class="app-kicker">Growth / Lead finder</p>
+                    <p class="app-title">Your market, mapped.</p>
+                  </div>
+                  <span class="badge" data-finder-badge>25 mi radius</span>
+                </div>
+                <div class="finder-controls">
+                  <div class="finder-radius">
+                    <label for="platform-radius">Radius</label>
+                    <input id="platform-radius" type="range" min="5" max="50" step="5" value="25" data-finder-radius>
+                    <output for="platform-radius" data-finder-radius-out>25 mi</output>
+                  </div>
+                  <div class="finder-chips" role="group" aria-label="Filter prospects">
+                    <button class="chip is-active" type="button" aria-pressed="true" data-finder-filter="all">All</button>
+                    <button class="chip" type="button" aria-pressed="false" data-finder-filter="hotels">Hotels</button>
+                    <button class="chip" type="button" aria-pressed="false" data-finder-filter="restaurants">Restaurants</button>
+                    <button class="chip" type="button" aria-pressed="false" data-finder-filter="gyms">Gyms</button>
+                    <button class="chip" type="button" aria-pressed="false" data-finder-filter="property">Property mgmt</button>
+                  </div>
+                </div>
+                <div class="map-panel">
+                  <svg viewBox="0 0 660 250" preserveAspectRatio="none" aria-hidden="true">
+                    <rect width="660" height="250" fill="#151c18"/>
+                    <path d="M0 40h660M0 88h660M0 138h660M0 188h660M0 238h660M55 0v250M120 0v250M195 0v250M275 0v250M360 0v250M445 0v250M530 0v250M610 0v250" stroke="#27322c" stroke-width="1"/>
+                    <path d="M-20 176 C95 158 158 188 244 164 S380 120 460 144 S580 190 700 158" fill="none" stroke="#2f4138" stroke-width="22"/>
+                    <path d="M-20 176 C95 158 158 188 244 164 S380 120 460 144 S580 190 700 158" fill="none" stroke="#3d5347" stroke-width="2"/>
+                    <path d="M84 -20 C118 60 168 82 148 144 S124 234 172 280" fill="none" stroke="#25332c" stroke-width="13"/>
+                    <path d="M478 -20 C448 52 480 96 526 126 S586 198 566 280" fill="none" stroke="#25332c" stroke-width="13"/>
+                    <circle cx="336" cy="136" r="104" fill="rgba(232,135,59,.045)" stroke="rgba(232,135,59,.32)" stroke-width="1" stroke-dasharray="4 7" data-finder-ring="outer"/>
+                    <circle cx="336" cy="136" r="62" fill="rgba(232,135,59,.04)" stroke="rgba(232,135,59,.2)" stroke-width="1" stroke-dasharray="3 6" data-finder-ring="inner"/>
+                    <circle cx="336" cy="136" r="5" fill="#E8873B"/>
+                  </svg>
+                  <div class="map-count"><b data-finder-count>148</b> <span data-finder-count-label>commercial prospects</span></div>
+                  <div class="map-legend" data-finder-legend><span>Hotels 19</span><span>Restaurants 42</span><span>Gyms 28</span><span>Property mgmt 31</span><span>Other 28</span></div>
+                  <span class="map-pin pin-1" data-finder-pin data-category="hotels" data-distance="3.2">1</span>
+                  <span class="map-pin pin-2" data-finder-pin data-category="restaurants" data-distance="4.1">2</span>
+                  <span class="map-pin pin-3" data-finder-pin data-category="gyms" data-distance="5.8">3</span>
+                  <span class="map-pin pin-4" data-finder-pin data-category="property" data-distance="7.2">4</span>
+                  <span class="map-pin pin-5" data-finder-pin data-category="hotels" data-distance="9.6">5</span>
+                </div>
+                <div class="lead-list">
+                  <div class="lead-head"><span>Best-fit prospects</span><span>Sorted by fit</span></div>
+                  <div class="lead-row" data-finder-row data-category="hotels" data-distance="3.2">
+                    <span class="lead-avatar">RH</span>
+                    <div class="lead-name"><b>Riverside Hotel</b><span>Hotel · 3.2 mi · Sample record</span></div>
+                    <button class="lead-action" type="button" data-lead-action data-lead-name="Riverside Hotel">Call</button>
+                  </div>
+                  <div class="lead-row" data-finder-row data-category="restaurants" data-distance="4.1">
+                    <span class="lead-avatar">NG</span>
+                    <div class="lead-name"><b>Northside Grill</b><span>Restaurant · 4.1 mi · Sample record</span></div>
+                    <button class="lead-action" type="button" data-lead-action data-lead-name="Northside Grill">Text</button>
+                  </div>
+                  <div class="lead-row" data-finder-row data-category="gyms" data-distance="5.8">
+                    <span class="lead-avatar">IF</span>
+                    <div class="lead-name"><b>Ironwood Fitness</b><span>Gym · 5.8 mi · Sample record</span></div>
+                    <button class="lead-action" type="button" data-lead-action data-lead-name="Ironwood Fitness">Call</button>
+                  </div>
+                  <div class="lead-row" data-finder-row data-category="property" data-distance="7.2">
+                    <span class="lead-avatar">PC</span>
+                    <div class="lead-name"><b>Palm Court Offices</b><span>Property mgmt · 7.2 mi · Sample record</span></div>
+                    <button class="lead-action" type="button" data-lead-action data-lead-name="Palm Court Offices">Call</button>
+                  </div>
+                </div>
+                <div class="lead-empty" data-finder-empty hidden>No sample prospects match this filter. Widen the radius or clear the category.</div>
+                <div class="demo-toast" data-demo-toast role="status" aria-live="polite" hidden></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="reach">
+      <div class="shell band-grid">
+        <div class="band-copy">
+          <p class="mono">02 · Reach</p>
+          <h2>Start the conversation.</h2>
+          <p>Voice, SMS, and email run as one sequence. Monarch knows what was said, when to follow up, and when a live person should take over. Consent and opt-outs are part of the system, not a footnote.</p>
+          <ul class="feature-list">
+            <li>Consent-aware AI voice with live human handoff</li>
+            <li>Two-way SMS and email in one thread</li>
+            <li>Opt-outs, recordings, and full conversation logs</li>
+            <li>Sequences that pause the moment someone replies</li>
+          </ul>
+        </div>
+        <div class="band-visual">
+          <div class="visual-label"><span>Outreach · Sample sequence</span><span>Consent-first</span></div>
+          <div class="app-frame">
+            <div class="app-chrome">
+              <span class="app-dot"></span><span class="app-dot"></span><span class="app-dot"></span>
+              <span class="app-url">app.monarch / sequences</span>
+              <span class="app-status">Active</span>
+            </div>
+            <div class="app-main">
+              <div class="app-top">
+                <div>
+                  <p class="app-kicker">Sequence / Commercial assessment</p>
+                  <p class="app-title">Start the conversation.</p>
+                </div>
+                <span class="badge badge-ember">Step 3 of 4</span>
+              </div>
+              <div class="sequence">
+                <div class="sequence-step is-done">
+                  <span class="sequence-icon"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                  <div><b>Day 1 · AI voice</b><span>Voicemail left · 0:42</span></div>
+                  <span class="sequence-state">Done</span>
+                </div>
+                <div class="sequence-step is-done">
+                  <span class="sequence-icon"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-message"/></svg></span>
+                  <div><b>Day 1 · SMS</b><span>“Is now a bad time?”</span></div>
+                  <span class="sequence-state">Replied</span>
+                </div>
+                <div class="sequence-step is-active">
+                  <span class="sequence-icon"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                  <div><b>Day 2 · Email</b><span>Assessment invite + one-pager</span></div>
+                  <span class="sequence-state">Scheduled</span>
+                </div>
+                <div class="sequence-step">
+                  <span class="sequence-icon"><svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                  <div><b>Day 4 · Follow-up call</b><span>Only if there is no reply</span></div>
+                  <span class="sequence-state">Queued</span>
+                </div>
+              </div>
+              <div class="sequence-reply">
+                <span class="float-check">✓</span>
+                <div><b>“Thursday works — what times do you have?”</b><span>Sample reply · pause sequence · human handoff</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="close">
+      <div class="shell band-grid">
+        <div class="band-copy">
+          <p class="mono">03 · Close</p>
+          <h2>See the whole relationship.</h2>
+          <p>Every call, text, email, note, quote, and task lands on one record. The pipeline updates from real activity, so the team sees the same truth and the next step does not live in someone's head.</p>
+          <ul class="feature-list">
+            <li>One record per prospect and customer</li>
+            <li>Stages, tasks, and reminders that update themselves</li>
+            <li>Field routing and booked assessments</li>
+            <li>Reporting the whole team can trust</li>
+          </ul>
+        </div>
+        <div class="band-visual">
+          <div class="visual-label"><span>Pipeline · Sample workspace</span><span>This week</span></div>
+          <div class="app-frame">
+            <div class="app-chrome">
+              <span class="app-dot"></span><span class="app-dot"></span><span class="app-dot"></span>
+              <span class="app-url">app.monarch / pipeline</span>
+              <span class="app-status">Synced</span>
+            </div>
+            <div class="app-main">
+              <div class="app-top">
+                <div>
+                  <p class="app-kicker">Pipeline / Commercial</p>
+                  <p class="app-title">The next step, visible.</p>
+                </div>
+                <span class="badge">This week</span>
+              </div>
+              <div class="pipeline">
+                <div class="pipe-col">
+                  <div class="pipe-head"><span>New</span><span>4</span></div>
+                  <div class="pipe-card"><b>Riverside Hotel</b><span>Hotel · 3.2 mi</span><em>Call today</em></div>
+                  <div class="pipe-card"><b>Northside Grill</b><span>Restaurant · 4.1 mi</span><em>Text today</em></div>
+                </div>
+                <div class="pipe-col">
+                  <div class="pipe-head"><span>Assessment</span><span>3</span></div>
+                  <div class="pipe-card"><b>Ironwood Fitness</b><span>Gym · 5.8 mi</span><em>Thu 10:30</em></div>
+                  <div class="pipe-card"><b>Palm Court Offices</b><span>Property mgmt</span><em>Fri 2:00</em></div>
+                </div>
+                <div class="pipe-col">
+                  <div class="pipe-head"><span>Quote</span><span>2</span></div>
+                  <div class="pipe-card"><b>Clean Slate Laundry</b><span>Commercial</span><em>Follow up Mon</em></div>
+                  <div class="pipe-card"><b>Sunset Suites</b><span>Hotel · 6.1 mi</span><em>Review scope</em></div>
+                </div>
+              </div>
+              <div class="pipe-value"><span>Open pipeline</span><b>Sample data</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-band">
+      <div class="shell trust-grid">
+        <div><b>Consent first.</b><p>Opt-outs, recordings, and conversation logs are part of the workflow.</p></div>
+        <div><b>One record.</b><p>Every touch lands on the same prospect and customer record.</p></div>
+        <div><b>Human handoff.</b><p>AI starts the conversation; your team takes over when it matters.</p></div>
+        <div><b>Built to improve.</b><p>Reporting shows what is working, not just what happened.</p></div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="platform-cta">
+      <div class="shell cta-grid">
+        <div>
+          <p class="eyebrow">See it with your market</p>
+          <h2 id="platform-cta">We will map your <em>actual service area.</em></h2>
+          <p class="lede">Bring a radius, a category, and the offer you want to sell. We will show you what the system would find and how the first sequence would run.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="contact.html">Request a working session <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <span class="mono">30 minutes · Screen share</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>

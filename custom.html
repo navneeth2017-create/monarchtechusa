@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom systems — Monarch</title>
+  <meta name="description" content="Monarch configures and extends its core CRM around your market, offer, stages, routing rules, and reporting.">
+  <meta name="theme-color" content="#14110e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body id="top" data-page="custom">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+
+  <main id="main" class="page-enter">
+    <section class="page-hero">
+      <div class="shell page-hero-grid">
+        <div>
+          <p class="eyebrow">Custom systems</p>
+          <h1>Your business isn't a template. <em>Your software shouldn't be.</em></h1>
+          <p class="lede">Monarch starts with one core system, then configures and extends it around your market, your offer, and the way your team actually works.</p>
+        </div>
+        <aside class="page-hero-side">
+          <span class="mono">The principle</span>
+          <p>Start with software that works. Then make it fit. You get a real operating system, not a pile of one-off screens with no foundation.</p>
+          <div class="page-index">
+            <a href="#tailored"><span>What we tailor</span><span>01</span></a>
+            <a href="#standard"><span>Standard vs. custom</span><span>02</span></a>
+            <a href="#fit"><span>Who it fits</span><span>03</span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="band" id="tailored">
+      <div class="shell band-grid">
+        <div class="band-copy">
+          <p class="mono">01 · What we tailor</p>
+          <h2>A system with your rules inside it.</h2>
+          <p>The core product handles discovery, outreach, and pipeline. The custom layer is where your business becomes specific: the categories you serve, the questions your team asks, the way a quote becomes a route.</p>
+          <ul class="feature-list">
+            <li>Market and fit rules for your service area</li>
+            <li>Stages, intake fields, and handoff rules</li>
+            <li>Voice scripts and approved messaging</li>
+            <li>Field routing, reporting, and team permissions</li>
+          </ul>
+        </div>
+        <div class="band-visual" data-config-demo>
+          <div class="visual-label"><span>System configuration</span><span>One workspace</span></div>
+          <div class="config-card">
+            <div class="config-head">
+              <span class="app-dot"></span><span class="app-dot"></span><span class="app-dot"></span>
+              <span>monarch.config</span><span>Draft</span>
+            </div>
+            <div class="config-body">
+              <div class="config-line"><span class="config-key">workspace</span><span class="config-val"><span class="string">"Commercial services"</span></span></div>
+              <div class="config-line"><span class="config-key">market</span><span class="config-val"><span class="string">"Service area · 25 mi"</span></span></div>
+              <div class="config-line"><span class="config-key">fit</span><span class="config-val"><span class="string">"Hotels, gyms, property mgmt"</span></span></div>
+              <div class="config-line"><span class="config-key">stages</span><span class="config-val"><span class="accent">New → Contacted → Assessment</span></span></div>
+              <div class="config-line" data-config-line="voice"><span class="config-key">voice</span><span class="config-val"><span class="string">"Consent-aware / human handoff"</span></span></div>
+              <div class="config-line" data-config-line="routing"><span class="config-key">routing</span><span class="config-val"><span class="string">"Booked assessment → field route"</span></span></div>
+              <div class="config-line" data-config-line="reporting"><span class="config-key">reporting</span><span class="config-val"><span class="accent">"Source · Stage · Next step"</span></span></div>
+              <div class="config-line" data-config-line="integrations" hidden><span class="config-key">integrations</span><span class="config-val"><span class="string">"Calendar · maps · CRM"</span></span></div>
+              <div class="config-line"><span class="config-key">access</span><span class="config-val"><span class="bool">true</span> <span class="comment">// role-based</span></span></div>
+            </div>
+            <div class="config-foot">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-shield"/></svg>
+              Consent, opt-outs, and conversation logs are built into the core — not bolted on later.
+            </div>
+          </div>
+          <div class="config-controls">
+            <p class="mono">Build the layer</p>
+            <div class="config-switches" role="group" aria-label="Optional modules">
+              <button class="config-switch is-on" type="button" aria-pressed="true" data-config-toggle="voice">AI voice</button>
+              <button class="config-switch is-on" type="button" aria-pressed="true" data-config-toggle="routing">Field routing</button>
+              <button class="config-switch is-on" type="button" aria-pressed="true" data-config-toggle="reporting">Reporting</button>
+              <button class="config-switch" type="button" aria-pressed="false" data-config-toggle="integrations">Integrations</button>
+            </div>
+            <div class="config-summary" role="status" aria-live="polite">
+              <span data-config-count>3 of 4 add-ons on</span>
+              <b data-config-summary>Core + Voice + Routing + Reporting</b>
+            </div>
+            <button class="config-reset" type="button" data-config-reset>Reset to recommended</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="standard">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">02 · Standard vs. custom</p>
+            <h2>A real product underneath. <em>Your business on top.</em></h2>
+          </div>
+          <p class="lede">You should not pay to reinvent the parts that every growth system needs. You should pay to make the parts that are uniquely yours work properly.</p>
+        </div>
+        <div class="compare-grid">
+          <div class="compare-card">
+            <p class="mono">Comes standard</p>
+            <h3>The core system.</h3>
+            <ul class="compare-list">
+              <li>Local lead discovery and dedupe</li>
+              <li>AI voice, SMS, and email sequences</li>
+              <li>Pipeline, tasks, and conversation history</li>
+              <li>Consent, opt-outs, and recordings</li>
+              <li>Hosting, monitoring, and support</li>
+            </ul>
+          </div>
+          <div class="compare-card is-accent">
+            <p class="mono">Built around you</p>
+            <h3>The custom layer.</h3>
+            <ul class="compare-list">
+              <li>Your market definition and fit rules</li>
+              <li>Your stages, fields, and handoffs</li>
+              <li>Your scripts, offers, and follow-up cadence</li>
+              <li>Your routing and reporting views</li>
+              <li>Integrations with the tools you already run</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fit">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 · Who it fits</p>
+            <h2>Built for operators who would rather <em>sell than admin.</em></h2>
+          </div>
+          <p class="lede">The system is a fit when the work is relationship-led, the market is local or regional, and the follow-up matters as much as the first call.</p>
+        </div>
+        <div class="deliverable-grid">
+          <article class="deliverable">
+            <p class="mono">Good fit</p>
+            <h3>Ozone &amp; air purification</h3>
+            <p>Commercial assessments, recurring service, and a service radius full of properties that need a conversation.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">Good fit</p>
+            <h3>Home services</h3>
+            <p>Roofing, restoration, HVAC, pest, landscaping — anywhere a booked estimate is the real unit of growth.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">Good fit</p>
+            <h3>Commercial field sales</h3>
+            <p>Reps who need a live book, a map, a next step, and a clean record before they walk in the door.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">Probably not</p>
+            <h3>Pure self-serve SaaS</h3>
+            <p>If no one follows up, routes, or books a conversation, a custom growth system is more than you need.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="custom-cta">
+      <div class="shell cta-grid">
+        <div>
+          <p class="eyebrow">Bring the exceptions</p>
+          <h2 id="custom-cta">The parts that don't fit <em>are the interesting part.</em></h2>
+          <p class="lede">Tell us where the standard tools break: the field nobody captures, the handoff that gets missed, the report you rebuild by hand every week.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="contact.html">Talk through your workflow <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <span class="mono">30 minutes · Bring the messy version</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>
