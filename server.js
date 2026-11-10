@@ -17,6 +17,8 @@ const MIME = {
   ".webp": "image/webp",
   ".ico": "image/x-icon",
   ".pdf": "application/pdf",
+  ".wav": "audio/wav",
+  ".mp3": "audio/mpeg",
   ".txt": "text/plain; charset=utf-8",
   ".woff": "font/woff",
   ".woff2": "font/woff2",
