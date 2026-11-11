@@ -140,7 +140,7 @@
       { threshold: 0.08, rootMargin: "0px 0px -6% 0px" }
     );
 
-    const groups = document.querySelectorAll(".section-head, .router-grid, .steps-strip, .cap-grid");
+    const groups = document.querySelectorAll(".section-head, .router-grid, .steps-strip, .cap-grid, .check-grid, .quote-grid, .stats-row");
     groups.forEach((el) => {
       el.classList.add("stagger");
       io.observe(el);

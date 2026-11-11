@@ -1838,3 +1838,98 @@ main { overflow: hidden; }
     animation-duration: 0.01ms !important;
   }
 }
+
+/* ---------- Stats band ---------- */
+.stats-band {
+  padding: 54px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-soft);
+}
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+}
+.stat { padding: 30px 26px; background: var(--bg-soft); }
+.stat b {
+  display: block;
+  font-family: var(--display);
+  font-size: 44px;
+  line-height: 1;
+  color: var(--ember);
+  letter-spacing: -0.02em;
+}
+.stat span { display: block; margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.45; }
+
+/* ---------- Checklist ---------- */
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 32px;
+}
+.check-grid li {
+  position: relative;
+  padding: 14px 0 14px 30px;
+  color: #d7d0c4;
+  font-size: 15px;
+  border-bottom: 1px solid var(--line);
+}
+.check-grid li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  color: var(--ember);
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+/* ---------- Quotes ---------- */
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.quote {
+  position: relative;
+  padding: 26px 24px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 20px;
+  line-height: 1.35;
+}
+.quote::before {
+  content: "“";
+  position: absolute;
+  top: -6px;
+  left: 18px;
+  color: var(--ember);
+  font-family: var(--display);
+  font-size: 54px;
+  line-height: 1;
+}
+.quote cite {
+  display: block;
+  margin-top: 16px;
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .stats-row { grid-template-columns: 1fr 1fr; }
+  .check-grid { grid-template-columns: 1fr 1fr; }
+  .quote-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 500px) {
+  .stats-row { grid-template-columns: 1fr; }
+  .check-grid { grid-template-columns: 1fr; }
+}
