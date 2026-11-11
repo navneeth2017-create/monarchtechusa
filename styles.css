@@ -843,6 +843,22 @@ main { overflow: hidden; }
 .band-visual .map-panel { min-height: 222px; height: 222px; }
 .band-visual .lead-list { margin-top: 10px; }
 
+/* ---------- Capability grid ---------- */
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+.cap-card { padding: 30px 28px; background: var(--bg); }
+.cap-num { display: block; color: var(--soft); font-size: 10px; letter-spacing: 0.1em; }
+.cap-card h3 { margin: 16px 0 10px; font-size: 21px; }
+.cap-card p { color: var(--muted); font-size: 14.5px; line-height: 1.6; }
+.cap-foot { margin-top: 26px; }
+@media (max-width: 900px) { .cap-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .cap-grid { grid-template-columns: 1fr; } }
+
 .sequence { display: grid; gap: 8px; }
 .sequence-step {
   display: flex;
