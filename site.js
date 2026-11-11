@@ -113,4 +113,37 @@
       if (window.innerWidth > 980 && button.getAttribute("aria-expanded") === "true") setOpen(false);
     });
   }
+
+  // --- Motion: scroll reveal + hero entrance (fluid, like our other sites) ---
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    // Staggered entrance for the hero, right on load.
+    const hero = document.querySelector(".hero");
+    if (hero) {
+      const kids = hero.querySelectorAll(".hero-copy > *, .hero-visual");
+      kids.forEach((el, i) => {
+        el.classList.add("reveal");
+        el.style.transitionDelay = i * 85 + "ms";
+      });
+      requestAnimationFrame(() => requestAnimationFrame(() => kids.forEach((el) => el.classList.add("is-in"))));
+    }
+
+    // Reveal section heads and cards as they scroll into view.
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-in");
+            io.unobserve(e.target);
+          }
+        }
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -6% 0px" }
+    );
+
+    const groups = document.querySelectorAll(".section-head, .router-grid, .steps-strip, .cap-grid");
+    groups.forEach((el) => {
+      el.classList.add("stagger");
+      io.observe(el);
+    });
+  }
 })();
