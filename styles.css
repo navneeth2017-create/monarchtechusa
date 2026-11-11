@@ -1775,68 +1775,40 @@ main { overflow: hidden; }
 }
 
 /* ==========================================================================
-   Motion — fluid transitions + scroll reveal (matches the feel of our
-   other sites: smooth easing, elements rise in as they enter the viewport).
+   Motion — scroll reveal via a one-time animation, so the hover state stays
+   snappy (transitions and reveal animations never fight each other).
    ========================================================================== */
 
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.72s var(--ease), transform 0.72s var(--ease);
-}
-.reveal.is-in {
-  opacity: 1;
-  transform: none;
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Staggered reveal for card grids */
-.stagger > * {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.72s var(--ease), transform 0.72s var(--ease);
+.reveal, .stagger > * { opacity: 0; }
+.reveal.is-in, .stagger.is-in > * {
+  animation: rise-in 0.55s var(--ease-out) both;
 }
-.stagger.is-in > * { opacity: 1; transform: none; }
-.stagger.is-in > *:nth-child(1) { transition-delay: 0ms; }
-.stagger.is-in > *:nth-child(2) { transition-delay: 75ms; }
-.stagger.is-in > *:nth-child(3) { transition-delay: 150ms; }
-.stagger.is-in > *:nth-child(4) { transition-delay: 225ms; }
-.stagger.is-in > *:nth-child(5) { transition-delay: 300ms; }
-.stagger.is-in > *:nth-child(6) { transition-delay: 375ms; }
+.stagger.is-in > *:nth-child(1) { animation-delay: 0ms; }
+.stagger.is-in > *:nth-child(2) { animation-delay: 70ms; }
+.stagger.is-in > *:nth-child(3) { animation-delay: 140ms; }
+.stagger.is-in > *:nth-child(4) { animation-delay: 210ms; }
+.stagger.is-in > *:nth-child(5) { animation-delay: 280ms; }
+.stagger.is-in > *:nth-child(6) { animation-delay: 350ms; }
 
-/* Unified smooth interactive states */
-.btn,
-.route-card,
-.step-link,
-.cap-card,
-.brand,
-.site-nav a,
-.header-cta {
-  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
-  transition-duration: 0.22s;
-  transition-timing-function: var(--ease);
+/* Hover — pure transition, instant, unaffected by the reveal */
+.route-card, .cap-card, .step-link {
+  transition: transform 0.16s var(--ease-out), box-shadow 0.16s var(--ease-out), border-color 0.16s var(--ease-out), background-color 0.16s var(--ease-out);
 }
+.route-card:hover, .cap-card:hover, .step-link:hover { transform: translateY(-3px); }
 
-/* Card hover lift */
-.route-card:hover,
-.cap-card:hover,
-.step-link:hover {
-  transform: translateY(-3px);
+.btn, .brand, .site-nav a, .header-cta {
+  transition: color 0.16s var(--ease-out), background-color 0.16s var(--ease-out), border-color 0.16s var(--ease-out), box-shadow 0.16s var(--ease-out), transform 0.16s var(--ease-out), opacity 0.16s var(--ease-out);
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .reveal,
-  .stagger > * {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-  }
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+  .reveal, .stagger > * { opacity: 1 !important; animation: none !important; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
 
 /* ---------- Stats band ---------- */
@@ -1886,48 +1858,53 @@ main { overflow: hidden; }
   font-size: 13px;
 }
 
-/* ---------- Quotes ---------- */
-.quote-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+/* ---------- Proof card ---------- */
+.proof-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 36px 34px;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  text-decoration: none;
+  transition: border-color 0.16s var(--ease-out), transform 0.16s var(--ease-out), box-shadow 0.16s var(--ease-out);
 }
-.quote {
-  position: relative;
-  padding: 26px 24px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--panel);
+.proof-card:hover {
+  border-color: rgba(232, 135, 59, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 26px 52px -32px rgba(0, 0, 0, 0.7);
+}
+.proof-copy { min-width: 0; }
+.proof-card .mono { color: var(--ember); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
+.proof-card h3 { margin-top: 14px; font-size: 26px; line-height: 1.16; letter-spacing: -0.02em; }
+.proof-card p { margin-top: 12px; color: var(--muted); font-size: 15px; line-height: 1.6; max-width: 600px; }
+.proof-cta {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
   color: var(--ink);
-  font-family: var(--display);
-  font-size: 20px;
-  line-height: 1.35;
-}
-.quote::before {
-  content: "“";
-  position: absolute;
-  top: -6px;
-  left: 18px;
-  color: var(--ember);
-  font-family: var(--display);
-  font-size: 54px;
-  line-height: 1;
-}
-.quote cite {
-  display: block;
-  margin-top: 16px;
-  color: var(--soft);
   font-family: var(--mono);
-  font-size: 11px;
-  font-style: normal;
+  font-size: 12px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  white-space: nowrap;
+  transition: border-color 0.16s var(--ease-out), color 0.16s var(--ease-out);
 }
+.proof-card:hover .proof-cta { border-color: var(--ember); color: var(--ember); }
+.proof-card:hover .route-arrow { background: var(--ember); border-color: var(--ember); color: #1a120c; }
 
 @media (max-width: 900px) {
   .stats-row { grid-template-columns: 1fr 1fr; }
   .check-grid { grid-template-columns: 1fr 1fr; }
-  .quote-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .proof-card { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 500px) {
   .stats-row { grid-template-columns: 1fr; }

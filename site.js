@@ -122,7 +122,7 @@
       const kids = hero.querySelectorAll(".hero-copy > *, .hero-visual");
       kids.forEach((el, i) => {
         el.classList.add("reveal");
-        el.style.transitionDelay = i * 85 + "ms";
+        el.style.animationDelay = i * 85 + "ms";
       });
       requestAnimationFrame(() => requestAnimationFrame(() => kids.forEach((el) => el.classList.add("is-in"))));
     }
