@@ -7,6 +7,7 @@ The Monarch marketing site and ozone sales assets.
 - `/` — home
 - `/platform.html` — find, reach, close
 - `/custom.html` — custom system layers
+- `/private-ai.html` — private, tailored AI
 - `/process.html` — map, build, launch
 - `/contact.html` — contact and note builder
 - `/proposal.html` — two-page proposal with print views

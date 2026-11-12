@@ -23,6 +23,7 @@
   const nav = [
     ["platform", "Platform", "platform.html"],
     ["custom", "Custom systems", "custom.html"],
+    ["private-ai", "Private AI", "private-ai.html"],
     ["process", "Process", "process.html"],
     ["contact", "Contact", "contact.html"],
   ];

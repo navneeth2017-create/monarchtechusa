@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Private AI — Monarch</title>
+  <meta name="description" content="Monarch runs private, tailored AI on dedicated hardware. Your data stays inside your boundary, your models are tuned to your business, and a cloud fallback is used only when a task needs it.">
+  <meta name="theme-color" content="#14110e">
+  <meta property="og:title" content="Private AI — Monarch">
+  <meta property="og:description" content="Your data. Your models. Your AI. Private inference, tailored to your business, with a cloud fallback only when it earns it.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body id="top" data-page="private-ai">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" data-site-header></header>
+
+  <main id="main" class="page-enter">
+    <section class="page-hero">
+      <div class="shell page-hero-grid">
+        <div>
+          <p class="eyebrow">Private AI · Owned, not rented</p>
+          <h1>Your data. Your models. <em>Your AI.</em></h1>
+          <p class="lede">Monarch runs private, tailored AI on hardware we control — so your customer data, calls, documents, and workflows stay inside your boundary. The control of a private stack, with frontier fallback when a task needs it.</p>
+          <div class="hero-actions">
+            <a class="btn" href="contact.html">Request a private AI session <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#stack">See the stack</a>
+          </div>
+          <div class="hero-meta">
+            <span>Private inference</span>
+            <span>Custom models</span>
+            <span>Per-tenant isolation</span>
+            <span>Cloud fallback, opt-in</span>
+          </div>
+        </div>
+        <aside class="page-hero-side">
+          <span class="mono">The principle</span>
+          <p>Private is not a setting. It is an architecture: your inference, your retrieval, your model versions, and your audit trail.</p>
+          <div class="page-index">
+            <a href="#why"><span>Why private</span><span>01</span></a>
+            <a href="#stack"><span>The stack</span><span>02</span></a>
+            <a href="#models"><span>The models</span><span>03</span></a>
+            <a href="#tailor"><span>What we tailor</span><span>04</span></a>
+            <a href="#boundary"><span>Where data goes</span><span>05</span></a>
+            <a href="#deploy"><span>Deployment</span><span>06</span></a>
+            <a href="#controls"><span>Controls</span><span>07</span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="why" aria-labelledby="why-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">01 · Why private</p>
+            <h2 id="why-title">The AI you rent <em>isn't yours.</em></h2>
+          </div>
+          <p class="lede">Cloud AI is convenient until the price changes, the model changes, or a customer asks where their data went. A private layer gives you the capability on your terms.</p>
+        </div>
+        <div class="compare-grid">
+          <div class="compare-card">
+            <p class="mono">Rented AI</p>
+            <h3>Someone else's stack.</h3>
+            <ul class="compare-list">
+              <li>Per-token pricing you don't control</li>
+              <li>Data leaves your boundary</li>
+              <li>Model updates you didn't approve</li>
+              <li>Vendor outage becomes your outage</li>
+              <li>Generic answers with no access to your systems</li>
+            </ul>
+          </div>
+          <div class="compare-card is-accent">
+            <p class="mono">Private AI</p>
+            <h3>Your stack. Your terms.</h3>
+            <ul class="compare-list">
+              <li>Predictable infrastructure you own or dedicate</li>
+              <li>Inference and retrieval inside your boundary</li>
+              <li>Model versions pinned and tested by you</li>
+              <li>Your uptime, your fallback, your terms</li>
+              <li>Tuned to your data, tools, and voice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="stack" aria-labelledby="stack-title">
+      <div class="shell band-grid">
+        <div class="band-copy">
+          <p class="mono">02 · The stack</p>
+          <h2 id="stack-title">A private inference layer. <em>Not a reseller.</em></h2>
+          <p>We run open-weight models on hardware we control. A router sends each request to the right model — local for sensitive or high-volume work, cloud only when a task genuinely needs a frontier model.</p>
+          <ul class="feature-list">
+            <li>Private GPU inference for models that fit</li>
+            <li>Speech, vision, embeddings, and rerank in one stack</li>
+            <li>Policy-based routing per tenant and per task</li>
+            <li>Every request logged: model, tokens, latency, tenant</li>
+          </ul>
+        </div>
+        <div class="band-visual">
+          <div class="visual-label"><span>Monarch private inference</span><span>Private</span></div>
+          <div class="app-frame">
+            <div class="app-chrome">
+              <span class="app-dot"></span><span class="app-dot"></span><span class="app-dot"></span>
+              <span class="app-url">monarch.private / inference</span>
+              <span class="app-status">Live</span>
+            </div>
+            <div class="private-stack-body">
+              <div class="stack-row">
+                <span class="stack-label">Request</span>
+                <span class="stack-value">app.monarch · api</span>
+                <span class="stack-state">In</span>
+              </div>
+              <div class="stack-row">
+                <span class="stack-label">Router</span>
+                <span class="stack-value">tenant · task · policy</span>
+                <span class="stack-state">Route</span>
+              </div>
+              <div class="stack-row is-local">
+                <span class="stack-label">Models</span>
+                <span class="stack-value">llama · qwen · mistral · deepseek</span>
+                <span class="stack-state">Local</span>
+              </div>
+              <div class="stack-row is-local">
+                <span class="stack-label">Speech</span>
+                <span class="stack-value">stt · tts · diarization</span>
+                <span class="stack-state">Local</span>
+              </div>
+              <div class="stack-row is-local">
+                <span class="stack-label">Retrieval</span>
+                <span class="stack-value">embeddings · rerank · vector</span>
+                <span class="stack-state">Local</span>
+              </div>
+              <div class="stack-row">
+                <span class="stack-label">Audit</span>
+                <span class="stack-value">model · tokens · latency · tenant</span>
+                <span class="stack-state">Log</span>
+              </div>
+              <div class="stack-row is-fallback">
+                <span class="stack-label">Fallback</span>
+                <span class="stack-value">cloud frontier · opt-in</span>
+                <span class="stack-state">Policy</span>
+              </div>
+            </div>
+            <div class="private-stack-foot">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-shield"/></svg>
+              Cloud fallback is opt-in per task — and logged like every other request.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="models" aria-labelledby="models-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 · The models</p>
+            <h2 id="models-title">The best private models. <em>Matched to the job.</em></h2>
+          </div>
+          <p class="lede">No single model wins every task. We benchmark the strongest open-weight families on your actual work, then pair them with speech, vision, embedding, and rerank models.</p>
+        </div>
+        <div class="cap-grid">
+          <article class="cap-card"><span class="cap-num mono">01</span><h3>Reasoning + agents</h3><p>Llama, Qwen, and DeepSeek-class models for analysis, planning, and multi-step work.</p></article>
+          <article class="cap-card"><span class="cap-num mono">02</span><h3>Writing + extraction</h3><p>Mistral, Gemma, and small fast models for drafting, classification, and structured output.</p></article>
+          <article class="cap-card"><span class="cap-num mono">03</span><h3>Voice</h3><p>Local speech-to-text and text-to-speech for calls, follow-ups, and customer answers.</p></article>
+          <article class="cap-card"><span class="cap-num mono">04</span><h3>Retrieval</h3><p>Embedding and rerank models over your CRM, documents, orders, and call history.</p></article>
+          <article class="cap-card"><span class="cap-num mono">05</span><h3>Vision + documents</h3><p>OCR and document models for invoices, labels, forms, and photos.</p></article>
+          <article class="cap-card"><span class="cap-num mono">06</span><h3>Frontier fallback</h3><p>Cloud models only when a task needs them — routed, logged, and opt-in.</p></article>
+        </div>
+        <p class="fine-print">Model families are examples, not a fixed menu. We benchmark on your work and pin the versions that win.</p>
+      </div>
+    </section>
+
+    <section class="section" id="tailor" aria-labelledby="tailor-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">04 · Tailored, not generic</p>
+            <h2 id="tailor-title">Your business inside <em>the model.</em></h2>
+          </div>
+          <p class="lede">A private model is only useful if it knows your business. We tailor the system prompt, retrieval, tools, evals — and, where it earns its keep, a fine-tune.</p>
+        </div>
+        <div class="deliverable-grid">
+          <article class="deliverable">
+            <p class="mono">Your data</p>
+            <h3>Retrieval over the real systems.</h3>
+            <p>CRM, orders, inventory, documents, call transcripts — indexed per tenant, never mixed.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">Your voice</p>
+            <h3>Scripts, tone, and guardrails.</h3>
+            <p>Escalation rules, consent, and DNC gating built in. The assistant sounds like your team, not a demo.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">Your tools</p>
+            <h3>The work, not just the chat.</h3>
+            <p>CRM, QuickBooks, Stripe, telephony, dispatch, and internal APIs — the assistant can act, not just answer.</p>
+          </article>
+          <article class="deliverable">
+            <p class="mono">Your evals</p>
+            <h3>A test set from real work.</h3>
+            <p>We ship the model that wins on your tasks, not the one that wins a leaderboard.</p>
+          </article>
+        </div>
+        <div class="tailor-ladder">
+          <span class="mono">The order that works</span>
+          <div class="ladder-row">
+            <span><b>01</b> Prompt + policy</span>
+            <span><b>02</b> Retrieval</span>
+            <span><b>03</b> Tools</span>
+            <span><b>04</b> Fine-tune</span>
+          </div>
+          <p>Start at the lowest layer that works. Fine-tune only when the data proves it earns the cost.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="boundary" aria-labelledby="boundary-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">05 · Private by design</p>
+            <h2 id="boundary-title">Know exactly <em>where the data goes.</em></h2>
+          </div>
+          <p class="lede">Private does not mean pretending the cloud doesn't exist. It means drawing a clear boundary, enforcing it, and giving you a dedicated or on-prem option when you need full residency.</p>
+        </div>
+        <div class="compare-grid">
+          <div class="compare-card is-accent">
+            <p class="mono">Inside your private boundary</p>
+            <h3>The work and the context.</h3>
+            <ul class="compare-list">
+              <li>Prompts, documents, and embeddings</li>
+              <li>Model weights and custom adapters</li>
+              <li>Inference logs and evaluation sets</li>
+              <li>Call transcripts and summaries</li>
+              <li>Retrieval indexes and tenant namespaces</li>
+            </ul>
+          </div>
+          <div class="compare-card">
+            <p class="mono">Vetted infrastructure</p>
+            <h3>The services that stay outside.</h3>
+            <ul class="compare-list">
+              <li>App hosting — Railway</li>
+              <li>Billing — Stripe</li>
+              <li>Accounting — QuickBooks</li>
+              <li>Telephony — Telnyx or Twilio</li>
+              <li>Each under contract, access-controlled, and listed as a subprocessor</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fine-print">For full data residency, we deploy a dedicated instance or an on-prem appliance — same stack, same controls, inside your facility.</p>
+      </div>
+    </section>
+
+    <section class="section" id="deploy" aria-labelledby="deploy-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">06 · Deployment</p>
+            <h2 id="deploy-title">Private at the level <em>you need.</em></h2>
+          </div>
+          <p class="lede">Start on shared private inference, move to a dedicated instance as volume grows, or take the whole stack on-prem when residency requires it.</p>
+        </div>
+        <div class="tier-grid">
+          <article class="tier-card">
+            <p class="mono">01 · Private inference</p>
+            <h3>Shared hardware. Isolated tenants.</h3>
+            <p>Best for teams that want private AI without owning hardware.</p>
+            <ul class="tier-list">
+              <li>Per-tenant keys and retrieval namespaces</li>
+              <li>Pinned models and shared evals</li>
+              <li>Monthly capacity planning</li>
+            </ul>
+            <div class="tier-foot">Start here</div>
+          </article>
+          <article class="tier-card is-accent">
+            <p class="mono">02 · Dedicated instance</p>
+            <h3>Your own GPU. Your own namespace.</h3>
+            <p>Best for higher volume, custom fine-tunes, and stricter isolation.</p>
+            <ul class="tier-list">
+              <li>Dedicated compute and storage</li>
+              <li>Custom adapters and evals</li>
+              <li>Priority throughput and support</li>
+            </ul>
+            <div class="tier-foot">Scale up</div>
+          </article>
+          <article class="tier-card">
+            <p class="mono">03 · On-prem appliance</p>
+            <h3>The private node, at your site.</h3>
+            <p>Best for data residency, regulated workflows, or isolated networks.</p>
+            <ul class="tier-list">
+              <li>Your facility, your network</li>
+              <li>Full data residency</li>
+              <li>Optional isolated network</li>
+            </ul>
+            <div class="tier-foot">Own the stack</div>
+          </article>
+        </div>
+        <p class="fine-print">Same models, same router, same controls at every tier. The difference is where the compute sits and how much of it is yours.</p>
+      </div>
+    </section>
+
+    <section class="section" id="controls" aria-labelledby="controls-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">07 · Controls</p>
+            <h2 id="controls-title">The controls a serious buyer <em>will ask for.</em></h2>
+          </div>
+          <p class="lede">Private AI is a security product as much as a model product. These are the controls we design into every deployment.</p>
+        </div>
+        <ul class="check-grid">
+          <li>Per-tenant API keys</li>
+          <li>Isolated retrieval namespaces</li>
+          <li>Audit log per request</li>
+          <li>Encryption in transit + at rest</li>
+          <li>No training on customer data</li>
+          <li>Retention + deletion controls</li>
+          <li>Human handoff + consent/DNC</li>
+          <li>Pinned model versions</li>
+          <li>Backups + restore tests</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="trust-band">
+      <div class="shell trust-grid">
+        <div><b>Private inference.</b><p>Your data stays inside your boundary.</p></div>
+        <div><b>Custom models.</b><p>Tuned to your work, not a demo.</p></div>
+        <div><b>Cloud fallback.</b><p>Frontier only when it earns it.</p></div>
+        <div><b>One stack.</b><p>Private, dedicated, or on-prem.</p></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="private-faq">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Questions</p>
+            <h2 id="private-faq">The honest answers.</h2>
+          </div>
+          <p class="lede">The questions a serious buyer asks before moving AI into a private environment.</p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>What does “private” actually mean here?</summary>
+            <p>Inference and retrieval run on Monarch-controlled hardware. Your prompts, documents, embeddings, and model adapters stay inside your tenant boundary. App hosting, billing, and telephony are separate vetted services, listed as subprocessors. For full residency, we deploy dedicated or on-prem.</p>
+          </details>
+          <details>
+            <summary>Do we need to own the hardware?</summary>
+            <p>No. Start on shared private inference. Move to a dedicated instance or on-prem appliance when volume, isolation, or residency requires it.</p>
+          </details>
+          <details>
+            <summary>Can we use our own models?</summary>
+            <p>Yes. We are model-agnostic. Bring open-weight models, adapters, or an approved endpoint; we benchmark and pin what works.</p>
+          </details>
+          <details>
+            <summary>What happens when the node goes down?</summary>
+            <p>A cloud fallback keeps critical workflows alive. We route by task and policy, so a hardware issue degrades gracefully instead of stopping the business.</p>
+          </details>
+          <details>
+            <summary>How do you stop one company's data leaking into another's?</summary>
+            <p>Per-tenant keys, isolated retrieval namespaces, scoped prompts, and audit logs. The AI layer follows the same company boundary as the app.</p>
+          </details>
+          <details>
+            <summary>How do you price it?</summary>
+            <p>The build is scoped like any Monarch system; the private layer adds infrastructure and model operations. We quote the deployment tier and the monthly run rate after the working session.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="private-cta">
+      <div class="shell cta-grid">
+        <div>
+          <p class="eyebrow">See it on your data</p>
+          <h2 id="private-cta">Bring us the workflow. <em>We'll show you what stays private.</em></h2>
+          <p class="lede">A 30-minute working session: the task, the data, the model, and the boundary. We'll map what runs private, what needs a frontier model, and what it costs to own.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="contact.html">Request a private AI session <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <span class="mono">30 minutes · Bring one workflow</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>
