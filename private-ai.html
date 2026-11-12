@@ -124,7 +124,7 @@
               </div>
               <div class="stack-row is-local">
                 <span class="stack-label">Models</span>
-                <span class="stack-value">llama · qwen · mistral · deepseek</span>
+                <span class="stack-value">glm-5.3 · qwen3.8 · nemotron</span>
                 <span class="stack-state">Local</span>
               </div>
               <div class="stack-row is-local">
@@ -167,14 +167,32 @@
           <p class="lede">No single model wins every task. We benchmark the strongest open-weight families on your actual work, then pair them with speech, vision, embedding, and rerank models.</p>
         </div>
         <div class="cap-grid">
-          <article class="cap-card"><span class="cap-num mono">01</span><h3>Reasoning + agents</h3><p>Llama, Qwen, and DeepSeek-class models for analysis, planning, and multi-step work.</p></article>
-          <article class="cap-card"><span class="cap-num mono">02</span><h3>Writing + extraction</h3><p>Mistral, Gemma, and small fast models for drafting, classification, and structured output.</p></article>
-          <article class="cap-card"><span class="cap-num mono">03</span><h3>Voice</h3><p>Local speech-to-text and text-to-speech for calls, follow-ups, and customer answers.</p></article>
-          <article class="cap-card"><span class="cap-num mono">04</span><h3>Retrieval</h3><p>Embedding and rerank models over your CRM, documents, orders, and call history.</p></article>
-          <article class="cap-card"><span class="cap-num mono">05</span><h3>Vision + documents</h3><p>OCR and document models for invoices, labels, forms, and photos.</p></article>
-          <article class="cap-card"><span class="cap-num mono">06</span><h3>Frontier fallback</h3><p>Cloud models only when a task needs them — routed, logged, and opt-in.</p></article>
+          <article class="cap-card"><span class="cap-num mono">01</span><h3>Reasoning + agents</h3><p>GLM-5.3-Flash for long-horizon work; DeepSeek V4.1 Flash as the cloud fallback when a task needs frontier-scale knowledge.</p></article>
+          <article class="cap-card"><span class="cap-num mono">02</span><h3>Writing + extraction</h3><p>Qwen3.8-27B and Gemma 4 for drafting, classification, and structured JSON — fast enough to run every request.</p></article>
+          <article class="cap-card"><span class="cap-num mono">03</span><h3>Voice</h3><p>Qwen3-ASR and Parakeet for transcription, Kokoro and Ming for speech. Local, low-latency, multilingual.</p></article>
+          <article class="cap-card"><span class="cap-num mono">04</span><h3>Retrieval</h3><p>Qwen3-Embedding and Qwen3-Reranker over your CRM, documents, orders, and call history.</p></article>
+          <article class="cap-card"><span class="cap-num mono">05</span><h3>Vision + documents</h3><p>Nemotron 3.5 Super VL for invoices, labels, forms, photos, and long PDFs.</p></article>
+          <article class="cap-card"><span class="cap-num mono">06</span><h3>Frontier fallback</h3><p>Kimi K3.1 Pro or Claude only when a task needs more — routed, logged, and opt-in.</p></article>
         </div>
-        <p class="fine-print">Model families are examples, not a fixed menu. We benchmark on your work and pin the versions that win.</p>
+
+        <div class="model-fit" aria-label="Models that fit the Monolith">
+          <div class="model-fit-item">
+            <span class="mono">2× DGX Spark · 256 GB</span>
+            <strong>GLM-5.3-Flash</strong>
+            <span>320B MoE · 204 GB NVFP4 · 1M context · MIT</span>
+          </div>
+          <div class="model-fit-item">
+            <span class="mono">RTX Pro 6000 · 96 GB</span>
+            <strong>Qwen3.8-27B</strong>
+            <span>262K context · 31 GB FP8 · Apache 2.0</span>
+          </div>
+          <div class="model-fit-item">
+            <span class="mono">RTX Pro 6000 · 96 GB</span>
+            <strong>Nanbeige4.3-33B</strong>
+            <span>512K context · 21 GB Q4 · Apache 2.0</span>
+          </div>
+        </div>
+        <p class="fine-print">Current lineup, November 2026. These are the strongest models that fit the Monolith — not the largest models on a leaderboard. We benchmark on your work, check the licence, and pin the versions that win.</p>
       </div>
     </section>
 

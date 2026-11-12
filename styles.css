@@ -859,6 +859,22 @@ main { overflow: hidden; }
 .cap-card h3 { margin: 16px 0 10px; font-size: 21px; }
 .cap-card p { color: var(--muted); font-size: 14.5px; line-height: 1.6; }
 .cap-foot { margin-top: 26px; }
+
+/* ---------- Model fit strip ---------- */
+.model-fit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+.model-fit-item { display: grid; gap: 7px; padding: 22px 24px; background: var(--bg); }
+.model-fit-item .mono { color: var(--soft); font-size: 10px; letter-spacing: 0.1em; }
+.model-fit-item strong { font-family: var(--display); font-size: 21px; font-weight: 500; letter-spacing: -0.01em; }
+.model-fit-item span:last-child { color: var(--muted); font-size: 12.5px; line-height: 1.5; }
+@media (max-width: 900px) { .model-fit { grid-template-columns: 1fr; } }
+
 @media (max-width: 900px) { .cap-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .cap-grid { grid-template-columns: 1fr; } }
 
