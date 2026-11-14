@@ -24,6 +24,7 @@
     ["platform", "Platform", "platform.html"],
     ["custom", "Custom systems", "custom.html"],
     ["private-ai", "Private AI", "private-ai.html"],
+    ["preflight", "Preflight", "preflight.html"],
     ["process", "Process", "process.html"],
     ["contact", "Contact", "contact.html"],
   ];

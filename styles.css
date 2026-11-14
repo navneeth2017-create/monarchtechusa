@@ -2099,3 +2099,188 @@ main { overflow: hidden; }
   .ladder-row { grid-template-columns: 1fr 1fr; }
   .stack-row { grid-template-columns: 78px minmax(0, 1fr) auto; gap: 9px; }
 }
+
+/* ==========================================================================
+   PREFLIGHT — packaging QA page (preflight.html) + home teaser
+   ========================================================================== */
+
+/* The product frame, in the warm Rabbitgun palette instead of the platform green */
+#gates .app-frame { background: #171310; }
+#gates .app-chrome { background: #1d1813; color: #8d8478; }
+#gates .app-url { color: #a79b8d; }
+#gates .app-status { color: var(--ember); }
+#gates .app-status::before { background: var(--ember); }
+
+.pf-report {
+  display: grid;
+  grid-template-columns: 158px minmax(0, 1fr);
+}
+
+.pf-proof {
+  padding: 18px 16px;
+  border-right: 1px solid rgba(243, 238, 229, 0.08);
+  background: #171310;
+}
+
+.pf-sheet {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  padding: 10px 9px;
+  border-radius: 6px;
+  background: #e9e0d2;
+  color: #241d15;
+  box-shadow: 0 16px 34px -18px rgba(0, 0, 0, 0.75);
+}
+
+.pf-sheet-brand { font-family: var(--mono); font-size: 7px; letter-spacing: 0.18em; }
+.pf-sheet-name { margin-top: 6px; font-family: var(--display); font-size: 15px; line-height: 1; }
+.pf-sheet-sub { font-size: 7.5px; color: rgba(36, 29, 21, 0.65); }
+.pf-sheet-bar {
+  margin-top: auto;
+  width: 78%;
+  height: 14px;
+  border-radius: 1px;
+  background: repeating-linear-gradient(90deg, #241d15 0 2px, transparent 2px 4px, #241d15 4px 5px, transparent 5px 8px);
+}
+.pf-sheet-weight { font-family: var(--mono); font-size: 7px; letter-spacing: 0.08em; }
+
+.pf-pin {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--ember);
+  color: #241207;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pf-caption {
+  margin: 10px 0 0;
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pf-findings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 18px;
+}
+
+.pf-verdict {
+  align-self: flex-start;
+  padding: 5px 10px;
+  border: 1px solid rgba(226, 86, 63, 0.4);
+  border-radius: 999px;
+  background: rgba(226, 86, 63, 0.12);
+  color: #ef8a76;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.pf-find { display: flex; align-items: flex-start; gap: 10px; }
+.pf-find b { display: block; color: var(--ink); font-size: 13.5px; font-weight: 600; }
+.pf-find p { margin: 2px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+
+.pf-dot {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(226, 86, 63, 0.4);
+  border-radius: 50%;
+  background: rgba(226, 86, 63, 0.16);
+  color: #ef8a76;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  font-weight: 600;
+}
+
+.pf-foot {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+  color: var(--soft);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+
+/* Home teaser */
+.pf-home {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 34px 36px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(232, 135, 59, 0.05), transparent 55%), var(--panel);
+  text-decoration: none;
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.pf-home:hover { border-color: var(--line-strong); transform: translateY(-2px); }
+.pf-home h2 {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: clamp(26px, 3.2vw, 38px);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+}
+.pf-home .lede { margin: 12px 0 0; max-width: 56ch; }
+.pf-home-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--ember);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pf-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #171310;
+}
+.pf-mini-verdict {
+  align-self: flex-start;
+  padding: 4px 9px;
+  border: 1px solid rgba(226, 86, 63, 0.4);
+  border-radius: 999px;
+  background: rgba(226, 86, 63, 0.12);
+  color: #ef8a76;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+}
+.pf-mini-row { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; }
+.pf-mini-row i { flex: none; width: 6px; height: 6px; border-radius: 50%; background: rgba(226, 86, 63, 0.8); }
+
+@media (max-width: 900px) {
+  .pf-report { grid-template-columns: 1fr; }
+  .pf-proof { border-right: 0; border-bottom: 1px solid rgba(243, 238, 229, 0.08); }
+  .pf-sheet { max-width: 150px; }
+  .pf-home { grid-template-columns: 1fr; padding: 26px 22px; }
+}
