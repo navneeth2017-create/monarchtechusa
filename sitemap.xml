@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://monarchtechusa.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://monarchtechusa.com/platform.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://monarchtechusa.com/custom.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://monarchtechusa.com/private-ai.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://monarchtechusa.com/process.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monarchtechusa.com/ozone.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monarchtechusa.com/preflight.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://monarchtechusa.com/proposal.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://monarchtechusa.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>

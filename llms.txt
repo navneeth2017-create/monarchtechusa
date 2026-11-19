@@ -1,0 +1,23 @@
+# Monarch
+
+> Monarch builds custom CRM, local lead discovery, multi-channel outreach, and private AI systems for service businesses — so every call, text, and email moves a real opportunity forward.
+
+## What Monarch does
+- Custom CRM systems.
+- Local lead discovery.
+- Multi-channel outreach (calls, texts, email).
+- Private AI systems for service businesses.
+
+## Pages
+- [Home](https://monarchtechusa.com/): Overview.
+- [Platform](https://monarchtechusa.com/platform.html): Find, reach, close.
+- [Custom Systems](https://monarchtechusa.com/custom.html): Custom system layers.
+- [Private AI](https://monarchtechusa.com/private-ai.html): Private AI offerings.
+- [Process](https://monarchtechusa.com/process.html): How Monarch works.
+- [Ozone](https://monarchtechusa.com/ozone.html): Ozone growth system (clickable).
+- [Preflight](https://monarchtechusa.com/preflight.html): Packaging proof checking.
+- [Proposal](https://monarchtechusa.com/proposal.html): Ozone growth system proposal.
+- [Contact](https://monarchtechusa.com/contact.html): Get in touch.
+
+## Company
+- Monarch Technologies — team@monarchtechusa.com
